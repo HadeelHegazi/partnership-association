@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { translations } from './translations';
 import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import newLogo from 'figma:asset/4837792d621ac537d46813009d47c7f2bad2257a.png';
+import { footerLogoConfig, footerLogoStyles } from '../src/config/logos';
 
 interface FooterProps {
   onOpenPrivacyPolicy: () => void;
@@ -20,11 +20,24 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacyPolicy, onOpenCooki
           {/* Organization Info */}
           <div className={isRTL ? 'md:order-3' : 'md:order-1'}>
             <div className="mb-8 flex justify-center">
-              <img
-                src={newLogo}
-                alt="שווים בשותפות / شراكة متساوية"
-                className="h-24 md:h-32 w-auto"
-              />
+              {/* Logo Image */}
+              <div className={footerLogoStyles.container}>
+                <img 
+                  src={footerLogoConfig.src}
+                  alt={footerLogoConfig.alt}
+                  className={footerLogoStyles.image}
+                  onError={(e) => {
+                    // Fallback to text if image fails
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+                
+                {/* Fallback text logo (hidden by default, shows if image fails) */}
+                <h2 className={footerLogoStyles.fallbackText}>
+                  {footerLogoConfig.fallbackText}
+                </h2>
+              </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-4">
               {language === 'he' && 'ארגון המקדם שותפות וחיים משותפים בין יהודים וערבים בישראל'}

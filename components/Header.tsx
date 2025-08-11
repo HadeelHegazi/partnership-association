@@ -1,12 +1,12 @@
 import React from "react";
 import { useLanguage, Language } from "./LanguageContext";
 import { translations } from "./translations";
-import { Button } from "./ui/button";
 import { Globe, Facebook, Instagram, Menu } from "lucide-react";
-import newLogo from 'figma:asset/4837792d621ac537d46813009d47c7f2bad2257a.png';
+import { getLogoConfig, logoStyles } from "../src/config/logos";
 
 export const Header: React.FC = () => {
   const { language, setLanguage, direction } = useLanguage();
+  const logoConfig = getLogoConfig(language);
 
   const navItems = translations.header.nav[language];
   const isRTL = direction === "rtl";
@@ -29,11 +29,29 @@ export const Header: React.FC = () => {
         >
           {/* Logo - unified for all languages - Made smaller */}
           <div className="flex items-center">
-            <img
-              src={newLogo}
-              alt="שווים בשותפות / شراكة متساوية"
-              className="h-24 md:h-32 lg:h-40 w-auto"
-            />
+            <div className={logoStyles.container}>
+              {/* Language-specific logo with fallback */}
+              <img 
+                src={logoConfig.src}
+                alt={logoConfig.alt}
+                className={logoStyles.image}
+                onError={(e) => {
+                  if (logoConfig.fallback) {
+                    // Try fallback logo
+                    e.currentTarget.src = logoConfig.fallback;
+                  } else {
+                    // Show fallback text if no fallback logo
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                  }
+                }}
+              />
+              
+              {/* Fallback text logo (hidden by default, shows if image fails) */}
+              <h1 className={logoStyles.fallbackText}>
+                🤝 Partnership Association
+              </h1>
+            </div>
           </div>
 
           {/* Navigation - Hidden on mobile, shown on desktop */}
