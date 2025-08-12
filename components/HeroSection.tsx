@@ -12,7 +12,7 @@ export const HeroSection: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          src="/src/images/HeroSection.png"
           alt="Diverse community working together"
           className="w-full h-full object-cover"
         />
