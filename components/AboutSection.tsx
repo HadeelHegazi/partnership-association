@@ -38,7 +38,7 @@ export const AboutSection: React.FC = () => {
           <div className={`${isRTL ? 'md:order-1' : 'md:order-2'}`}>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="src\images\AboutSection.jpg"
                 alt="Community members working together"
                 className="w-full h-80 object-cover"
               />
