@@ -251,7 +251,7 @@ export const translations = {
     },
     copyright: {
       he: 'כל הזכויות שמורות לשווים בשותפות',
-      ar: 'جميع الحقوق محفوظة لمتساوون في الشراكة',
+      ar: 'جميع الحقوق محفوظة لشراكة متساوية',
       en: 'All rights reserved to Shavim B\'Shutafut'
     },
     privacy: {

@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacyPolicy, onOpenCooki
             </div>
             <p className="text-gray-300 leading-relaxed mb-4">
               {language === 'he' && 'ארגון המקדם שותפות וחיים משותפים בין יהודים וערבים בישראל'}
-              {language === 'ar' && 'منظمة تعزز الشراكة والعيش المشترك بين اليهود والعرب في إسرائيل'}
+              {language === 'ar' && 'جمعية تعزز الشراكة والعيش المشترك بين اليهود والعرب في البلاد'}
               {language === 'en' && 'Organization promoting partnership and shared life between Jews and Arabs in Israel'}
             </p>
             
