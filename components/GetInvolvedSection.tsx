@@ -6,15 +6,15 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Heart, Users, Handshake, Share2 } from 'lucide-react';
 
 const icons = [Heart, Users, Handshake, Share2];
-const colors = ['text-orange-600', 'text-blue-900', 'text-orange-500', 'text-blue-800'];
-const borderColors = ['border-l-orange-600', 'border-l-blue-900', 'border-l-orange-500', 'border-l-blue-800'];
+  const colors = ['text-yellow-600', 'text-blue-900', 'text-yellow-500', 'text-blue-800'];
+  const borderColors = ['border-l-yellow-600', 'border-l-blue-900', 'border-l-yellow-500', 'border-l-blue-800'];
 
 export const GetInvolvedSection: React.FC = () => {
   const { language, direction } = useLanguage();
   const isRTL = direction === 'rtl';
   
   return (
-    <section className="py-16 bg-gradient-to-br from-orange-50 to-blue-50" id="section-4">
+    <section className="py-16 bg-gradient-to-br from-yellow-50 to-blue-50" id="section-4">
       <div className="container mx-auto px-4">
         <div className={`mb-12 ${isRTL ? 'text-center' : 'text-center'}`}>
           <h2 className="text-4xl font-bold text-blue-900 mb-6">
@@ -51,7 +51,7 @@ export const GetInvolvedSection: React.FC = () => {
         <div className="text-center">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-blue-900 to-orange-600 hover:from-blue-800 hover:to-orange-500 text-white px-12 py-4 text-xl shadow-lg"
+            className="bg-gradient-to-r from-blue-900 to-yellow-600 hover:from-blue-800 hover:to-yellow-500 text-white px-12 py-4 text-xl shadow-lg"
           >
             {translations.getInvolved.button[language]}
           </Button>

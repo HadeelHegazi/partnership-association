@@ -68,7 +68,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ open, onOpenChange
 
             {/* Contact Information */}
             <section className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-orange-600 mb-2">
+              <h3 className="text-lg font-semibold text-yellow-600 mb-2">
                 {translations.footer.contact[language]}
               </h3>
               <p className="text-gray-700">

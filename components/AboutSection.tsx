@@ -25,7 +25,7 @@ export const AboutSection: React.FC = () => {
 
             {/* Our Vision */}
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-orange-600">
+              <h3 className="text-2xl font-bold mb-4 text-yellow-600">
                 {translations.about.vision.title[language]}
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed">

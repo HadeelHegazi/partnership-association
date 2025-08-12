@@ -50,7 +50,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacyPolicy, onOpenCooki
               <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="text-orange-400 hover:text-orange-300 transition-colors">
+              <a href="#" className="text-yellow-400 hover:text-yellow-300 transition-colors">
                 <Instagram size={24} />
               </a>
             </div>
@@ -58,7 +58,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacyPolicy, onOpenCooki
 
           {/* Quick Links */}
           <div className={`${isRTL ? 'md:order-1' : 'md:order-2'}`}>
-            <h3 className="font-bold text-lg mb-4 text-orange-400">
+            <h3 className="font-bold text-lg mb-4 text-yellow-400">
               {translations.footer.quickLinks[language]}
             </h3>
             <ul className="space-y-2">

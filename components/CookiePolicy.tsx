@@ -73,13 +73,13 @@ export const CookiePolicy: React.FC<CookiePolicyProps> = ({ open, onOpenChange }
                   </p>
                 </div>
                 
-                <div className="bg-orange-50 p-3 rounded-lg border-l-4 border-l-orange-500">
-                  <h4 className="font-semibold text-orange-800">
+                <div className="bg-yellow-50 p-3 rounded-lg border-l-4 border-l-yellow-500">
+                  <h4 className="font-semibold text-yellow-800">
                     {language === 'he' && 'עוגיות אנליטיקה'}
                     {language === 'ar' && 'ملفات تعريف الارتباط التحليلية'}
                     {language === 'en' && 'Analytics Cookies'}
                   </h4>
-                  <p className="text-sm text-orange-700 mt-1">
+                  <p className="text-sm text-yellow-700 mt-1">
                     {language === 'he' && 'עוזרות לנו להבין איך משתמשים באתר (באישורכם)'}
                     {language === 'ar' && 'تساعدنا في فهم كيفية استخدام الموقع (بموافقتكم)'}
                     {language === 'en' && 'Help us understand how the website is used (with your consent)'}
@@ -100,7 +100,7 @@ export const CookiePolicy: React.FC<CookiePolicyProps> = ({ open, onOpenChange }
 
             {/* Contact Information */}
             <section className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-orange-600 mb-2">
+              <h3 className="text-lg font-semibold text-yellow-600 mb-2">
                 {translations.footer.contact[language]}
               </h3>
               <p className="text-gray-700">

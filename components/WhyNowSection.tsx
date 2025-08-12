@@ -16,7 +16,7 @@ export const WhyNowSection: React.FC = () => {
           alt="People joining hands in unity"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-orange-600/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-yellow-500/70"></div>
       </div>
 
       {/* Content */}

@@ -102,7 +102,7 @@ export const ContactSection: React.FC = () => {
                   
                   <Button 
                     type="button"
-                    className="bg-orange-600 hover:bg-orange-500 text-white flex-1"
+                    className="bg-yellow-600 hover:bg-yellow-500 text-white flex-1"
                   >
                     {translations.contact.form.donate[language]}
                   </Button>

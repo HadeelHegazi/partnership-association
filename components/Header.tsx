@@ -85,7 +85,7 @@ export const Header: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="text-orange-500 hover:text-orange-600 transition-colors"
+                className="text-yellow-500 hover:text-yellow-600 transition-colors"
               >
                 <Instagram size={20} />
               </a>

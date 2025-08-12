@@ -39,7 +39,7 @@ export const HeroSection: React.FC = () => {
           
           <Button 
             size="lg" 
-            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg shadow-lg"
+            className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 text-lg shadow-lg"
           >
             {translations.hero.buttons.donate[language]}
           </Button>

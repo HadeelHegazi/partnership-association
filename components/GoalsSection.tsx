@@ -5,8 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Users, GraduationCap, Shield, Zap, Scale } from 'lucide-react';
 
 const icons = [Users, GraduationCap, Shield, Zap, Scale];
-const colors = ['text-blue-900', 'text-orange-600', 'text-blue-800', 'text-orange-500', 'text-blue-700'];
-const bgColors = ['bg-blue-50', 'bg-orange-50', 'bg-blue-50', 'bg-orange-50', 'bg-blue-50'];
+  const colors = ['text-blue-900', 'text-yellow-600', 'text-blue-800', 'text-yellow-500', 'text-blue-700'];
+  const bgColors = ['bg-blue-50', 'bg-yellow-50', 'bg-blue-50', 'bg-yellow-50', 'bg-blue-50'];
 
 export const GoalsSection: React.FC = () => {
   const { language, direction } = useLanguage();
