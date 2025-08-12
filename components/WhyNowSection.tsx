@@ -12,7 +12,7 @@ export const WhyNowSection: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          src="/src/images/WhyNowSection.png"
           alt="People joining hands in unity"
           className="w-full h-full object-cover"
         />
