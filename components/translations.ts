@@ -18,9 +18,9 @@ export const translations = {
       en: 'Building a Shared Future of Equality, Dignity, and Security'
     },
     subtitle: {
-      he: 'ארגון המקדם שותפות אמיתית בין יהודים וערבים בישראל ונלחם באלימות ובפשיעה',
-      ar: 'منظمة تعزز الشراكة الحقيقية بين اليهود والعرب في إسرائيل وتحارب العنف والجريمة',
-      en: 'An organization promoting real partnership between Jews and Arabs in Israel and fighting violence and crime'
+      he: 'עמותה המקדם שותפות אמיתית בין יהודים וערבים בישראל ונלחם באלימות ובפשיעה',
+      ar: 'جمعية تعزز الشراكة الحقيقية بين اليهود والعرب في البلاد وتحارب العنف والجريمة',
+      en: 'An association promoting real partnership between Jews and Arabs in Israel and fighting violence and crime'
     },
     buttons: {
       about: {
@@ -43,9 +43,9 @@ export const translations = {
         en: 'Who Are We?'
       },
       content: {
-        he: 'אנחנו ארגון השואף ליצור מציאות חדשה של חיים משותפים בין יהודים וערבים בישראל, מתוך כבוד הדדי, שוויון ובטחון לכולם.',
-        ar: 'نحن منظمة تسعى لخلق واقع جديد من العيش المشترك بين اليهود والعرب في إسرائيل، من منطلق الاحترام المتبادل والمساواة والأمان للجميع.',
-        en: 'We are an organization striving to create a new reality of shared life between Jews and Arabs in Israel, based on mutual respect, equality and security for all.'
+        he: 'אנחנו עמותה השואף ליצור מציאות חדשה של חיים משותפים בין יהודים וערבים בישראל, מתוך כבוד הדדי, שוויון ובטחון לכולם.',
+        ar: 'نحن جمعية تسعى لخلق واقع جديد من العيش المشترك بين اليهود والعرب في البلاد من منطلق الاحترام المتبادل والمساواة والأمان للجميع.',
+        en: 'We are an association striving to create a new reality of shared life between Jews and Arabs in Israel, based on mutual respect, equality and security for all.'
       }
     },
     vision: {
@@ -55,7 +55,7 @@ export const translations = {
         en: 'Our Vision'
       },
       content: {
-        he: 'חברה שוותנית ומשותפת שבה כל אזרח, יהודי וערבי, יכול לחיות בכבוד, בביטחון ובשוויון מלא.',
+        he: 'חברה שוויונית ומשותפת שבה כל אזרח, יהודי וערבי, יכול לחיות בכבוד, בביטחון ובשוויון מלא.',
         ar: 'مجتمع متساوٍ ومشترك حيث يمكن لكل مواطن، يهودي وعربي، أن يعيش بكرامة وأمان ومساواة كاملة.',
         en: 'An equal and shared society where every citizen, Jewish and Arab, can live with dignity, security and full equality.'
       }
