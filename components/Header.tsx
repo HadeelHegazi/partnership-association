@@ -55,54 +55,54 @@ export const Header: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation - Hidden on mobile, shown on desktop */}
-          <nav
-            className={`hidden lg:flex items-center ${isRTL ? "space-x-reverse" : ""} space-x-6`}
-          >
-            {navItems.map((item, index) => (
-              <a
-                key={index}
-                href={`#section-${index}`}
-                className="text-gray-700 hover:text-blue-900 transition-colors duration-200 font-medium text-sm"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
+                     {/* Navigation - Hidden on mobile, shown on desktop */}
+           <nav
+             className={`hidden lg:flex items-center ${isRTL ? "space-x-reverse" : ""} space-x-6`}
+           >
+             {navItems.map((item, index) => (
+               <a
+                 key={index}
+                 href={`#section-${index}`}
+                 className="text-blue-800 hover:text-blue-600 transition-colors duration-200 font-semibold text-base py-2 px-3 rounded-lg hover:bg-blue-50"
+               >
+                 {item}
+               </a>
+             ))}
+           </nav>
 
           {/* Right side - Language toggle and social icons */}
           <div
             className={`flex items-center ${isRTL ? "space-x-reverse" : ""} space-x-4`}
           >
-            {/* Social media icons */}
-            <div
-              className={`hidden sm:flex items-center ${isRTL ? "space-x-reverse" : ""} space-x-2`}
-            >
-              <a
-                href="#"
-                className="text-blue-900 hover:text-blue-700 transition-colors"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-yellow-500 hover:text-yellow-600 transition-colors"
-              >
-                <Instagram size={20} />
-              </a>
-            </div>
+                         {/* Social media icons */}
+             <div
+               className={`hidden sm:flex items-center ${isRTL ? "space-x-reverse" : ""} space-x-2`}
+             >
+               <a
+                 href="#"
+                 className="text-blue-900 hover:text-blue-700 transition-colors p-2 rounded-lg hover:bg-blue-50"
+               >
+                 <Facebook size={22} />
+               </a>
+               <a
+                 href="#"
+                 className="text-yellow-500 hover:text-yellow-600 transition-colors p-2 rounded-lg hover:bg-yellow-50"
+               >
+                 <Instagram size={22} />
+               </a>
+             </div>
 
-            {/* Language selector */}
-            <div className="flex items-center space-x-1">
-              <Globe size={16} className="text-gray-600" />
-              <select
-                value={language}
-                onChange={(e) =>
-                  setLanguage(e.target.value as Language)
-                }
-                className="bg-transparent border-none text-sm font-medium text-gray-700 focus:outline-none cursor-pointer"
-                dir={direction}
-              >
+             {/* Language selector */}
+             <div className="flex items-center space-x-2">
+               <Globe size={18} className="text-blue-700" />
+               <select
+                 value={language}
+                 onChange={(e) =>
+                   setLanguage(e.target.value as Language)
+                 }
+                 className="bg-transparent border-none text-base font-semibold text-blue-800 focus:outline-none cursor-pointer"
+                 dir={direction}
+               >
                 <option value="he">
                   {translations.header.languages.he}
                 </option>
@@ -136,7 +136,7 @@ export const Header: React.FC = () => {
                  <a
                    key={index}
                    href={`#section-${index}`}
-                   className="block text-gray-700 hover:text-blue-900 transition-colors duration-200 font-medium text-base py-2"
+                   className="block text-blue-800 hover:text-blue-600 transition-colors duration-200 font-semibold text-lg py-3 px-2 rounded-lg hover:bg-blue-50"
                    onClick={() => setIsMobileMenuOpen(false)}
                  >
                    {item}
@@ -148,25 +148,25 @@ export const Header: React.FC = () => {
              <div className={`flex items-center justify-center space-x-4 mb-6 ${isRTL ? 'space-x-reverse' : ''}`}>
                <a
                  href="#"
-                 className="text-blue-900 hover:text-blue-700 transition-colors"
+                 className="text-blue-900 hover:text-blue-700 transition-colors p-2 rounded-lg hover:bg-blue-50"
                >
-                 <Facebook size={24} />
+                 <Facebook size={28} />
                </a>
                <a
                  href="#"
-                 className="text-yellow-500 hover:text-yellow-600 transition-colors"
+                 className="text-yellow-500 hover:text-yellow-600 transition-colors p-2 rounded-lg hover:bg-yellow-50"
                >
-                 <Instagram size={24} />
+                 <Instagram size={28} />
                </a>
              </div>
 
              {/* Mobile Language Selector */}
-             <div className="flex items-center justify-center space-x-2">
-               <Globe size={18} className="text-gray-600" />
+             <div className="flex items-center justify-center space-x-3">
+               <Globe size={20} className="text-blue-700" />
                <select
                  value={language}
                  onChange={(e) => setLanguage(e.target.value as Language)}
-                 className="bg-transparent border-none text-base font-medium text-gray-700 focus:outline-none cursor-pointer"
+                 className="bg-transparent border-none text-lg font-semibold text-blue-800 focus:outline-none cursor-pointer"
                  dir={direction}
                >
                  <option value="he">
