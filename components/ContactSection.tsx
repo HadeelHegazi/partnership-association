@@ -49,47 +49,47 @@ export const ContactSection: React.FC = () => {
                   <Label htmlFor="name" className={`text-gray-700 ${isRTL ? 'text-right' : 'text-left'}`}>
                     {translations.contact.form.name[language]}
                   </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="mt-1"
-                    dir={direction}
-                  />
+                                     <Input
+                     id="name"
+                     name="name"
+                     type="text"
+                     value={formData.name}
+                     onChange={handleInputChange}
+                     required
+                     className="mt-1 shadow-md focus:shadow-lg transition-shadow duration-200"
+                     dir={direction}
+                   />
                 </div>
                 
                 <div>
                   <Label htmlFor="email" className={`text-gray-700 ${isRTL ? 'text-right' : 'text-left'}`}>
                     {translations.contact.form.email[language]}
                   </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="mt-1"
-                    dir="ltr"
-                  />
+                                     <Input
+                     id="email"
+                     name="email"
+                     type="email"
+                     value={formData.email}
+                     onChange={handleInputChange}
+                     required
+                     className="mt-1 shadow-md focus:shadow-lg transition-shadow duration-200"
+                     dir="ltr"
+                   />
                 </div>
                 
                 <div>
                   <Label htmlFor="message" className={`text-gray-700 ${isRTL ? 'text-right' : 'text-left'}`}>
                     {translations.contact.form.message[language]}
                   </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    rows={4}
-                    className="mt-1"
-                    dir={direction}
-                  />
+                                     <Textarea
+                     id="message"
+                     name="message"
+                     value={formData.message}
+                     onChange={handleInputChange}
+                     rows={4}
+                     className="mt-1 shadow-md focus:shadow-lg transition-shadow duration-200"
+                     dir={direction}
+                   />
                 </div>
                 
                 <div className={`flex flex-col sm:flex-row gap-4 ${isRTL ? 'sm:flex-row-reverse' : ''}`}>
